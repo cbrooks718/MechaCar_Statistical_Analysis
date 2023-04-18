@@ -34,3 +34,26 @@ From this output we can make the following three conclusions:
 - Summary statistics of PSI for each manufacturing lot
 
 For the design specifications for the MechaCar suspension coils, the variance cannot exceed 100 PSI. Without looking at each lot individually, the variance from the total summary data frame is about 62.3 PSI. However, when we look at the second data frame, lot 3 exceeds the limit with a variance of about 170.3 PSI. 
+
+## T-Tests on Suspension Coils
+
+![T-Test](Images/T_Test_Total.png)
+
+Given a significance level of 0.05 percent(p-value=0.05), the p-value for this one-sample t-test for all manufacturing lots produces is 0.8849. Therefore, since the value is greater than the significance level, there is insufficient evidence to reject the null hypothesis. In other words, the mean PSI across all lots is statistically equal to the true mean of 1498.78.
+
+### T-Tests for each manufacturing lot
+
+Each test uses the same significance level of 0.05 percent(p-value=0.05)
+
+- Lot 1
+![Lot1](Images/T_Test_Lot1.png)
+
+For Lot 1, the p-value is significantly smaller than our significance value, therefore, we can reject the null hypothesis. In other words, the mean PSI of Lot 1 is statistically different from the true mean.
+
+- Lot 2
+![Lot2](Images/T_Test_Lot2.png)
+
+- Lot 3
+![Lot3](Images/T_Test_Lot3.png)
+
+For Lots 2 & 3, the p-values are both higher than the significance level, therefore, we fail to reject the null hypothesis. In other words, the mean PSI of Lots 2 & 3 are statistically equal to the true mean.
